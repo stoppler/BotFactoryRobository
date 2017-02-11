@@ -9,9 +9,13 @@
 	</head>
 	<body>
         <div id="container">
+			<h1>
+				<a class="brand" href="/"><img  class="logo" src="/assets/images/huckleberry.png" width="40px"/></a>
+				<a class="brand" href="/">Home</a>
+			</h1>
 			{content}
-			<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. 
-				{ci_version}</p>
+			<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds.
+					{ci_version}</p>
         </div>
 	</body>
 </html>
