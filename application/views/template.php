@@ -9,10 +9,20 @@
 	</head>
 	<body>
         <div id="container">
-			<h1>
-				<a class="brand" href="/"><img  class="logo" src="/assets/images/huckleberry.png" width="40px"/></a>
-				<a class="brand" href="/">Home</a>
-			</h1>
+			<ul>
+				<li>
+					<a class="brand" href="/">Home</a>
+				</li>
+				<li>
+					<a class="brand" href="/robots">Robots</a>
+				</li>
+				<li>
+					<a class="brand" href="/parts">Parts</a>
+				</li>
+				<li>
+					<a class="brand" href="/history">History</a>
+				</li>
+			</ul>
 			{content}
 			<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds.
 					{ci_version}</p>
