@@ -14,7 +14,7 @@
 					<a class="brand" href="/">Home</a>
 				</li>
 				<li>
-					<a class="brand" href="/robots">Robots</a>
+					<a class="brand" href="/assembly">Assembly</a>
 				</li>
 				<li>
 					<a class="brand" href="/parts">Parts</a>
