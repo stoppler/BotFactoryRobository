@@ -56,4 +56,4 @@ $route['parts'] = 'Parts';
 $route['parts/(:num)'] = 'Parts/single/$1';
 $route['test'] = 'Test';
 $route['robots'] = 'Robots';
-$route['history'] = 'History';
+$route['histories'] = 'Histories';
