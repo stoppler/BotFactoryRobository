@@ -1,4 +1,4 @@
-<div class="homeTxt">
+<div class="starterTxt">
 	<h1>Welcome to Huckleberry's Robot Factory</h1>
 	<h4>We make and sell quality products for everyone!</h4>
 </div>
