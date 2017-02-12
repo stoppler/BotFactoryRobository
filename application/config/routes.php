@@ -53,5 +53,7 @@ $route['default_controller'] = 'home';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['parts'] = 'Parts';
+$route['parts/(:num)'] = 'Parts/single/$1';
+$route['test'] = 'Test';
 $route['robots'] = 'Robots';
 $route['history'] = 'History';

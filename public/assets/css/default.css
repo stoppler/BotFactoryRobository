@@ -101,3 +101,11 @@ li:first-child {
 li a:hover {
     background-color: #bba3d0;
 }
+
+table {
+    border:1pt solid black;
+}
+
+table {
+    margin: 0 auto;
+}
