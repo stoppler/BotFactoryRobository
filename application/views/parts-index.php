@@ -13,7 +13,7 @@
 		<option value="W1">W1</option>
 	</select>
 	<br/>
-	<img src="/assets/images/unknown.png" height="300px"/>
+	<img src="/assets/images/bots/heads/a.jpg" height="300px"/>
 </div>
 <div id="container3">
 	<label>Choose torso:</label>
@@ -26,12 +26,12 @@
 		<option value="X2">X2</option>
 	</select>
 	<br/>
-	<img src="/assets/images/unknown.png" height="300px"/>
+	<img src="/assets/images/bots/torso/a.jpg" height="300px"/>
 </div>
 <div id="container3">
 	<label>Choose legs:</label>
 	<select>
-		<option value="A3">A3</option>
+		<option value="A3">A3<img src="/assets/images/unknown.png" height="300px"/></option>
 		<option value="B3">B3</option>
 		<option value="M3">M3</option>
 		<option value="N3">N3</option>
@@ -39,5 +39,5 @@
 		<option value="X3">X3</option>
 	</select>
 	<br/>
-	<img src="/assets/images/unknown.png" height="300px"/>
+	<img src="/assets/images/bots/legs/a.jpg" height="300px"/>
 </div>
