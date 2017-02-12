@@ -54,4 +54,4 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['parts'] = 'Parts';
 $route['robots'] = 'Robots';
-$route['history'] = 'History';
+$route['histories'] = 'Histories';

@@ -20,7 +20,7 @@
 					<a class="brand" href="/parts">Parts</a>
 				</li>
 				<li>
-					<a class="brand" href="/history">History</a>
+					<a class="brand" href="/histories">History</a>
 				</li>
 			</ul>
 			{content}
