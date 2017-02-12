@@ -55,5 +55,5 @@ $route['translate_uri_dashes'] = FALSE;
 $route['parts'] = 'Parts';
 $route['parts/(:num)'] = 'Parts/single/$1';
 $route['test'] = 'Test';
-$route['robots'] = 'Robots';
+$route['assembly'] = 'Assembly';
 $route['histories'] = 'Histories';

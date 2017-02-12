@@ -1,13 +1,13 @@
 <?php
 
-/* 
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
 class Part extends CI_Model {
-    
+
     var $data = [
         ['id' => '1', 'partCode' => 'a1','line' => 'household bot', 'caCode' => '101', 'plant' => 'Plant #1', 'timeBuilt' => '2010-01-01',
             'img' => 'a1.jpeg'],
