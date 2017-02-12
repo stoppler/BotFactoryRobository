@@ -21,4 +21,11 @@ Release Date: Feb 12, 2017
   - setup views 'parts-page.php' and 'single.php' to display necessary data           (Ryan)
   - created and updated changelog.md                                                  (Ryan)
 
+  - added history model 'History.php'                                                 (Lydia)
+  - added history view 'histories-page.php'                                           (Lydia)
+  - modified history controller 'Histories.php'                                       (Lydia)
+  - seeded model with dummy data for history table                                    (Lydia)
+  - setup views to display the table                                                  (Lydia)
+  - changed css for 'histories-page.php'                                              (Lydia)
+  - changed css for 'parts-page.php' and 'single.php'                                 (Lydia)
   
