@@ -1,7 +1,11 @@
-<h2>Detailed Part Information</h2>
+<div class="starterTxt">
+	<h1>Detailed Part Information</h1>
+</div>
+</br>
+</br>
 
 <div class="row">
-    <table style="border: 2px solid gray;">
+    <table style="border: 2px solid gray;" align="center">
          <tr class="border_bottom">
         <th>Part id</th>
         <th></th>
