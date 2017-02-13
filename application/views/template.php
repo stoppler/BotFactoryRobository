@@ -9,9 +9,23 @@
 	</head>
 	<body>
         <div id="container">
+			<ul>
+				<li>
+					<a class="brand" href="/">Home</a>
+				</li>
+				<li>
+					<a class="brand" href="/assembly">Assembly</a>
+				</li>
+				<li>
+					<a class="brand" href="/parts">Parts</a>
+				</li>
+				<li>
+					<a class="brand" href="/histories">History</a>
+				</li>
+			</ul>
 			{content}
-			<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. 
-				{ci_version}</p>
+			<!--<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds.
+					{ci_version}</p>-->
         </div>
 	</body>
 </html>
