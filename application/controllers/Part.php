@@ -21,8 +21,8 @@ class Part extends Application {
             $parts[] = ['id' => $record['id'], 'partCode' => $record['partCode'], 'caCode' => $record['caCode'], 'plant' => $record['plant'], 'timeBuilt' => $record['timeBuilt'], 'img' => $record['img'], 'line' => $record['line']];
         }
         $this->data['parts'] = $parts;
-        $this->data['ptitle'] = "<span class=\"plantname\">Huckleberry Plant</span> Dashboard <span class=\"glyphicon glyphicon-dashboard\"></span>";
-        $this->render();
+
+		$this->render();
     }
 
     //load deatil page of a single part

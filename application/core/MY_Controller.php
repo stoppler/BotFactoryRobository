@@ -25,6 +25,18 @@ class Application extends CI_Controller
 		$this->data = array ();
 		$this->data['pagetitle'] = 'Hucklberry Factory';
 		$this->data['ci_version'] = (ENVIRONMENT === 'development') ? 'CodeIgniter Version <strong>'.CI_VERSION.'</strong>' : '';
+
+		$this->data['ptitle'] = "<span class=\"plantname\">Huckleberry Plant</span> Dashboard <span class=\"glyphicon glyphicon-dashboard\"></span>";
+
+		//current role
+		$role = $this->session->userdata('userrole');
+		$this->data['currentrole'] = $role;
+
+		if ($role == 'owner') {
+			$this->data['managetab'] = "<li><a href=\"\manage\">Manage</a></li>";
+		} else {
+			$this->data['managetab'] = "";
+		}
 	}
 
 	/**
