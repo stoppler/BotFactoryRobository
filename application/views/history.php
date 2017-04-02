@@ -1,12 +1,10 @@
 <div class="starterTxt">
-	<h1>History</h1>
+    <h1>History</h1>
 </div>
 </br>
 </br>
-
-
-<div class="row">
-    <table style="border: 2px solid gray;" align="center">
+<div >
+    <table class="table-responsive table table-hover" style="border: 2px solid gray;" align="center">
         <tr>
             <th>Purchase ID</th>
             <th>Transaction ID</th>
@@ -15,7 +13,7 @@
             <th>Date</th>
             <th>Time</th>
         </tr>
-        {histories}
+        {history}
         <tr>
             <td>{purchaseId}</td>
             <td>{transactionId}</td>
@@ -24,6 +22,6 @@
             <td>{date}</td>
             <td>{time}</td>
         </tr>
-        {/histories} 
+        {/history} 
     </table>
 </div>
