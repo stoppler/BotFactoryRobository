@@ -71,28 +71,28 @@ body {
     padding: 10px;
 }
 .redbox {
-    background-color: #ed80e0;
+    background-color: #CD5C5C;
     color: #3f3f3f;
     border-radius: 250px;
     border: 8px solid white;
     padding: 100px;
 }
 .greenbox {
-    background-color: #42f4ce;
+    background-color: #1ABC9C;
     color: #3f3f3f;
     border-radius: 250px;
     border: 8px solid white;
     padding: 100px;
 }
 .graybox {
-    background-color: #809eed;
+    background-color: #9B59B6;
     color: black;
     border-radius: 250px;
     border: 8px solid white;
     padding: 100px;
 }
 .yellowbox {
-    background-color: #f4f281;
+    background-color: #F7DC6F;
     color: #3f3f3f;
     border-radius: 250px;
     border: 8px solid white;
