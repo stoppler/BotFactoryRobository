@@ -2,22 +2,23 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Assembly extends Application
-{
-	public function index()
-    {
+class Assembly extends Application {
+
+    public function index() {
         //$this->data['pagebody'] = 'parts-page';
-        $this->load->model('Assemble');
-        $this->data['pagebody'] = 'assembly-index';
+        $this->load->model('Assemblies');
+        $this->data['pagebody'] = 'assembly';
 
-        $source = $this->Assemble->all();
-		$parts = array ();
+        $source = $this->Assemblies->all();
+        $parts = array();
 
-		foreach ($source as $record) {
-			$parts[] = ['partCode' => $record['partCode'], 'img' => $record['img'], 'line' => $record['line']];
-	    }
+        foreach ($source as $record) {
+            $parts[] = ['partCode' => $record['partCode'], 'img' => $record['img'], 'line' => $record['line']];
+        }
 
-		$this->data['parts'] = $parts;
-		$this->render();
+        $this->data['parts'] = $parts;
+        $this->data['ptitle'] = "<span class=\"plantname\">Huckleberry Plant</span> Dashboard <span class=\"glyphicon glyphicon-dashboard\"></span>";
+        $this->render();
     }
+
 }
