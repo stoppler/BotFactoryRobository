@@ -1,0 +1,27 @@
+no data connection??
+
+model issues...
+view issues...
+
+homepage:
+friendlier layout
+
+parts:
+"feels funny"
+looks like a potential inventory
+with an observation that the data looks fishy
+friendlier layout
+
+assembly:
+"assembles" is a poor choice of name
+its a parts list not a list of assembled robots
+need a way to identify that
+dont have any identifier for a bot
+date and time stamp would be ideal
+need to provide dollar value
+needs to show any transaction that occurs (ex. buying, selling)
+
+whole thing needs a consistent naming convention
+poor formatting in some code
+missing or inconsistent comments
+

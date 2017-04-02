@@ -41,8 +41,7 @@ class Home extends Application {
         $this->data['earnings'] = $countrevenue;
         $this->data['expenses'] = $countexpence;
 
-        $this->data['ptitle'] = "<span class=\"plantname\">Huckleberry Plant</span> Dashboard <span class=\"glyphicon glyphicon-dashboard\"></span>";
-        $this->render();
+		$this->render();
     }
 
 }

@@ -17,8 +17,8 @@ class Assembly extends Application {
         }
 
         $this->data['parts'] = $parts;
-        $this->data['ptitle'] = "<span class=\"plantname\">Huckleberry Plant</span> Dashboard <span class=\"glyphicon glyphicon-dashboard\"></span>";
-        $this->render();
+
+		$this->render();
     }
 
 }
