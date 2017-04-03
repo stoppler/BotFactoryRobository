@@ -4,11 +4,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Home extends Application {
 
+    function __construct() {
+        parent::__construct();
+        //$this->load->model('Part');
+    }
+
     public function index() {
 
         $this->data['pagebody'] = 'home';
-        $this->load->model('histories');
-        $this->load->model('parts');
 
         $sourceone = $this->parts->all();
         $sourcetwo = $this->histories->all();
@@ -18,14 +21,22 @@ class Home extends Application {
         $countexpence = 0;
         $countrevenue = 0;
 
+
+        //retrieves number of parts on hand
         foreach ($sourceone as $parts) {
             $countparts++;
         }
 
+
         foreach ($sourcetwo as $record) {
-            $countexpence += $record['cost'];
-            $countrevenue += $record['revenue'];
-            $countbots++;
+            if ($record->value < 0) {
+                $countexpence += -$record->value;
+            } else {
+                $countexpence += $record->value;
+            }
+            if ($record->productType == 'bot') {
+                $countbots++;
+            }
         }
 
         $dashboard = array(
@@ -41,7 +52,7 @@ class Home extends Application {
         $this->data['earnings'] = $countrevenue;
         $this->data['expenses'] = $countexpence;
 
-        $this->data['ptitle'] = "<span class=\"plantname\">Huckleberry Plant</span> Dashboard <span class=\"glyphicon glyphicon-dashboard\"></span>";
+
         $this->render();
     }
 

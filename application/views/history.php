@@ -7,21 +7,22 @@
     <table class="table-responsive table table-hover" style="border: 2px solid gray;" align="center">
         <tr>
             <th>Purchase ID</th>
-            <th>Transaction ID</th>
-            <th>Assemblies</th>
-            <th>Shipments</th>
+            <th>Transaction Type</th>
+            <th>Value</th>
             <th>Date</th>
-            <th>Time</th>
+            <th>Product Type</th>
+            <th>Product ID</th>
         </tr>
         {history}
         <tr>
             <td>{purchaseId}</td>
-            <td>{transactionId}</td>
-            <td>{assemblies}</td>
-            <td>{shipments}</td>
-            <td>{date}</td>
-            <td>{time}</td>
+            <td>{transactionType}</td>
+            <td>{value}</td>
+            <td>{dateTime}</td>
+            <td>{productType}</td>
+            <td>{productIdentifier}</td>
         </tr>
         {/history} 
     </table>
 </div>
+
