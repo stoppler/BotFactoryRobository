@@ -4,11 +4,19 @@
 
 {parts}
 <div id="container3">
-    <img class="img-responsive" src="/img/{img}" title="{partCode} {line}"/></br>
-    <label>{partCode} {line}</label>
+    <img class="img-responsive" src="/img/{model}{piece}.jpeg" title="{model}{piece}"/></br>
+    <label>{model}{piece}</label>
     <input type="checkbox"/>
 </div>
 {/parts}
+
+{robots}
+<div >
+    <label>{head} {torso} {bottom} {botCode}</label>
+    <input type="checkbox"/>
+</div>
+{/robots}
+
 
 </br>
 </br>

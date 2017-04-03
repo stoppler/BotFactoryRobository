@@ -10,21 +10,19 @@ class History extends Application {
     }
 
     public function index() {
-        $this->load->model('Histories');
         $this->data['pagebody'] = 'history';
-        $source = $this->Histories->all();
+        $source = $this->histories->all();
         $history = array();
 
         foreach ($source as $record) {
-            $history[] = ['purchaseId' => $record['purchaseId'],
-                'transactionId' => $record['transactionId'],
-                'assemblies' => $record['assemblies'],
-                'shipments' => $record['shipments'],
-                'date' => $record['date'],
-                'time' => $record['time']];
+            $history[] = ['purchaseId' => $record->id,
+                'transactionType' => $record->transactionType,
+                'value' => $record->value,
+                'dateTime' => $record->dateTime,
+                'productType' => $record->productType,
+                'productIdentifier' => $record->productIdentifier];
         }
         $this->data['history'] = $history;
-        $this->data['ptitle'] = "<span class=\"plantname\">Huckleberry Plant</span> History <span class=\"glyphicon glyphicon-dashboard\"></span>";
         $this->render();
     }
 
