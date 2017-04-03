@@ -26,6 +26,9 @@ SET time_zone = "+00:00";
 -- Table structure for table `ci_sessions`
 --
 
+CREATE DATABASE IF NOT EXISTS huckleberrycorp;
+USE huckleberrycorp;
+
 DROP TABLE IF EXISTS `ci_sessions`;
 CREATE TABLE `ci_sessions` (
   `id` varchar(128) NOT NULL,
