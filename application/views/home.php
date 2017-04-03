@@ -1,7 +1,7 @@
 <div id="container2">
     <div class="container container-fluid homecontainer">
         <div class="col-sm-12">
-            <div class="col-sm-3 graybox">
+            <div class="col-sm-3 purplebox">
                 <h4>Parts on hand</h4>
                 <h3 class="homedashvalue">{totparts}</h3>
             </div>
