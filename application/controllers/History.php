@@ -24,7 +24,7 @@ class History extends Application {
                 'time' => $record['time']];
         }
         $this->data['history'] = $history;
-        $this->data['ptitle'] = "<span class=\"plantname\">Huckleberry Plant</span> Dashboard <span class=\"glyphicon glyphicon-dashboard\"></span>";
+        $this->data['ptitle'] = "<span class=\"plantname\">Huckleberry Plant</span> History <span class=\"glyphicon glyphicon-dashboard\"></span>";
         $this->render();
     }
 

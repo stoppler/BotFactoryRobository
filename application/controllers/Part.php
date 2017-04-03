@@ -21,7 +21,7 @@ class Part extends Application {
             $parts[] = ['id' => $record['id'], 'partCode' => $record['partCode'], 'caCode' => $record['caCode'], 'plant' => $record['plant'], 'timeBuilt' => $record['timeBuilt'], 'img' => $record['img'], 'line' => $record['line']];
         }
         $this->data['parts'] = $parts;
-        $this->data['ptitle'] = "<span class=\"plantname\">Huckleberry Plant</span> Dashboard <span class=\"glyphicon glyphicon-dashboard\"></span>";
+        $this->data['ptitle'] = "<span class=\"plantname\">Huckleberry Plant</span> Parts <span class=\"glyphicon glyphicon-th-list\"></span>";
         $this->render();
     }
 
@@ -32,7 +32,7 @@ class Part extends Application {
         $source = $this->Parts->get($id);
         $this->data = array_merge($this->data, $source);
         $this->data['parts'] = $source;
-        $this->data['ptitle'] = "<span class=\"plantname\">Huckleberry Plant</span> Dashboard <span class=\"glyphicon glyphicon-dashboard\"></span>";
+        $this->data['ptitle'] = "<span class=\"plantname\">Huckleberry Plant</span> Parts <span class=\"glyphicon glyphicon-th-list\"></span>";
         $this->render();
     }
 

@@ -32,7 +32,7 @@
     min-height: 100%;
 }
 .ptitle {
-    text-align: center;
+    text-align: right;
 }
 .parts {
     background-color: white;
@@ -71,32 +71,32 @@ body {
     padding: 10px;
 }
 .redbox {
-    background-color: #CD5C5C;
+    background-color: #ed80e0;
     color: #3f3f3f;
     border-radius: 250px;
     border: 8px solid white;
-    padding: 100px;
+    padding: 50px;
 }
 .greenbox {
-    background-color: #1ABC9C;
+    background-color: #42f4ce;
     color: #3f3f3f;
     border-radius: 250px;
     border: 8px solid white;
-    padding: 100px;
+    padding: 60px;
 }
-.graybox {
-    background-color: #9B59B6;
+.purplebox {
+    background-color: #809eed;
     color: black;
     border-radius: 250px;
     border: 8px solid white;
-    padding: 100px;
+    padding: 55px;
 }
 .yellowbox {
-    background-color: #F7DC6F;
+    background-color: #f4f281;
     color: #3f3f3f;
     border-radius: 250px;
     border: 8px solid white;
-    padding: 100px;
+    padding: 55px;
 }
 .assembly-header {
     text-align: center;
