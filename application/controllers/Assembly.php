@@ -3,6 +3,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Assembly extends Application {
+
     function __construct() {
         parent::__construct();
         //$this->load->model('Part');
@@ -23,16 +24,14 @@ class Assembly extends Application {
             $val++;
         }
         //load robot data from database into array with key value pairs
-        foreach($data as $record){
+        foreach ($data as $record) {
             $robots[$it] = ['id' => $record->id, 'head' => $record->topCode, 'torso' => $record->torsoCode, 'bottom' => $record->bottomCode, 'botCode' => $record->robotCode];
             $it++;
         }
-        
+
         $this->data['robots'] = $robots;
         $this->data['parts'] = $parts;
         $this->render();
-
-        
     }
 
 }

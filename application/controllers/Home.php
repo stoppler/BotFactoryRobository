@@ -51,8 +51,6 @@ class Home extends Application {
         $this->data['totparts'] = $countparts;
         $this->data['earnings'] = $countrevenue;
         $this->data['expenses'] = $countexpence;
-
-
         $this->render();
     }
 

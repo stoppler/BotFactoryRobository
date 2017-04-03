@@ -6,7 +6,6 @@ class Part extends Application {
 
     function __construct() {
         parent::__construct();
-        //$this->load->model('Part');
     }
 
     //load parts page
@@ -30,32 +29,17 @@ class Part extends Application {
         $source = $this->parts->all();
         foreach ($source as $record) {
             if ($record->id == $id) {
-                $this->data['id']       = $record->id;
-                $this->data['caCode']   = $record->caCode;
-                $this->data['model']    = $record->model;
-                $this->data['piece']    = $record->piece;
-                $this->data['plant']    = $record->plant;
+                $this->data['id'] = $record->id;
+                $this->data['caCode'] = $record->caCode;
+                $this->data['model'] = $record->model;
+                $this->data['piece'] = $record->piece;
+                $this->data['plant'] = $record->plant;
                 $this->data['dateTime'] = $record->dateTime;
-                $this->data['used']     = $record->used;
+                $this->data['used'] = $record->used;
                 break;
             }
         }
         $this->render();
     }
 
-    // retrieve a single part
-    /* public function get($which) {
-      // iterate over the data until we find the one we want
-      foreach ($this->data as $record) {
-      if ($record['id'] == $which) {
-      return $record;
-      }
-      }
-      return null;
-      }
-
-      // return all parts
-      public function all() {
-      return $this->data;
-      } */
 }
