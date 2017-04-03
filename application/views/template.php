@@ -28,9 +28,16 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="/"><span class="glyphicon glyphicon-home"/></a></li>
                         <li><a href="/parts">Parts</a></li>
-                        <li><a href="/assembly">Assembly</a>
-                        </li>
+                        <li><a href="/assembly">Assembly</a></li>
                         <li><a href="/history">History</a></li>
+						{managetab}
+						<li class="dropdown">
+						      <a class="dropdown-toggle" data-toggle="dropdown" href="#">User Role<b class="caret"></b></a>
+						      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+						      		<li><a href="/roles/actor/guest">Guest</a></li>
+						            <li><a href="/roles/actor/owner">Boss</a></li>
+						      </ul>
+						</li>
                     </ul>
                 </div>
             </div>
