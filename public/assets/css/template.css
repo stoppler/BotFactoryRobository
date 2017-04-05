@@ -62,41 +62,56 @@ body {
     padding: 0;
     /*content text colour*/
     color: #5e5c5b;
-    background-color: white;
+    /*background-color: white;*/
 }
+
 .homecontainer {
-    background-color: white;
-    border-radius: 15px;
-    border: 5px solid white;
-    padding: 10px;
+    padding: 50px;
+	text-align: center;
 }
 .redbox {
     background-color: #ed80e0;
     color: #3f3f3f;
-    border-radius: 250px;
+    border-radius: 20px;
     border: 8px solid white;
     padding: 50px;
 }
 .greenbox {
     background-color: #42f4ce;
     color: #3f3f3f;
-    border-radius: 250px;
+    border-radius: 20px;
     border: 8px solid white;
-    padding: 60px;
+    padding: 50px;
+}
+.logo {
+	padding: 10px;
+}
+.navtitle {
+	padding: 10px;
 }
 .purplebox {
     background-color: #809eed;
     color: black;
-    border-radius: 250px;
+    border-radius: 20px;
     border: 8px solid white;
-    padding: 55px;
+    padding: 50px;
 }
 .yellowbox {
     background-color: #f4f281;
     color: #3f3f3f;
-    border-radius: 250px;
+    border-radius: 20px;
     border: 8px solid white;
-    padding: 55px;
+    padding: 50px;
+}
+.whitebox {
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px grey;
+	text-align: center;
+	margin: 10px;
+}
+.assemblypart {
+	width: 400px;
 }
 .assembly-header {
     text-align: center;
@@ -146,6 +161,7 @@ body {
 }
 .plantname {
     color: #978dae;
+	padding-left: 120px;
 }
 .navaccount {
     border: 2px solid #f8831b;
