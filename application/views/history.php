@@ -10,8 +10,6 @@
             <th>Transaction Type</th>
             <th>Value</th>
             <th>Date</th>
-            <th>Product Type</th>
-            <th>Product ID</th>
         </tr>
         {history}
         <tr>
@@ -19,8 +17,6 @@
             <td>{transactionType}</td>
             <td>{value}</td>
             <td>{dateTime}</td>
-            <td>{productType}</td>
-            <td>{productIdentifier}</td>
         </tr>
         {/history} 
     </table>
