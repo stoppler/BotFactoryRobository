@@ -127,13 +127,15 @@ class Manage extends Application {
             $response = explode(" ", $result);
             if ($response[0] == "Ok") {
                 //success
-                $this->delete_sold_parts($botPart[0], botPart[1], $botPart[2]);
+                $this->delete_sold_parts($botPart[0], $botPart[1], $botPart[2]);
                 $this->robots->delete($botPart[3]);
                 //update history
                 $newHistory = $this->histories->create();
                 $newHistory->transactionType = "Sell Bot";
                 $newHistory->value = $response[1];
-                $newHistory->dateTime = new DateTime();
+                $newHistory->dateTime = $date = date('Y-m-d');
+                $newHistory->productType = 'bot';
+                $newHistory->productIdentifier = uniqid();
                 $this->histories->add($newHistory);
                 echo "<script>alert('#8Reboot Successful!');</script>";
             } else {
