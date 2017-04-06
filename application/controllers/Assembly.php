@@ -3,7 +3,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Assembly extends Application {
     function __construct() {
         parent::__construct();
-        //$this->load->model('Part');
     }
     public function index() {
         $this->data['pagebody'] = 'assembly';
@@ -100,7 +99,6 @@ class Assembly extends Application {
 		$this->parts->delete($bottom[2]);
 		//Record the building of a bot in history
 		$newHistory = $this->histories->create();
-		$newHistory->id = $this->histories->size();
 		$newHistory->transactionType = "Built Robot ". $newBot->robotCode;
 		$newHistory->value = 0;
 		$newHistory->dateTime = $date = date('Y-m-d');
@@ -156,7 +154,6 @@ class Assembly extends Application {
 			$this->parts->delete($part['id']);
 			//Record the return of parts in history
 			$newHistory = $this->histories->create();
-			$newHistory->id = $this->histories->size();
 			$newHistory->transactionType = "Part returned: ". $part['caCode'];
 			$newHistory->value = 0;
 			$newHistory->dateTime = $date = date('Y-m-d');
