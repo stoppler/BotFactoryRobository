@@ -50,7 +50,7 @@ class Part extends Application {
     }
 
     public function build_parts() {
-        $parts = file_get_contents('https://umbrella.jlparry.com/work/mybuilds?key=43958e');
+        $parts = file_get_contents('https://umbrella.jlparry.com/work/mybuilds?key=' . get_api());
         $parts = json_decode($parts, true);
 
         foreach ($parts as $part) {
@@ -79,7 +79,7 @@ class Part extends Application {
     }
 
     public function buy_parts() {
-        $parts = file_get_contents('https://umbrella.jlparry.com/work/buybox?key=43958e');
+        $parts = file_get_contents('https://umbrella.jlparry.com/work/buybox?key=' . get_api());
         $parts = json_decode($parts, true);
 
         $newHistory = $this->histories->create();
@@ -106,6 +106,11 @@ class Part extends Application {
             echo "after";
         }
         redirect('/parts');
+    }
+    
+    public function get_api() {
+        $source = $this->secrets->all();
+        return $source->api;
     }
 
 }
