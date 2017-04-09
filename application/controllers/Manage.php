@@ -23,7 +23,7 @@ class Manage extends Application {
                     $this->sell_bots();
                     break;
                 default:
-                    echo "<script>alert('#1Uh oh, something went wrong!');</script>";
+                    echo "<script>alert('Uh oh, something went wrong!');</script>";
                     break;
             }
         }
@@ -52,7 +52,7 @@ class Manage extends Application {
         $result = file_get_contents('https://umbrella.jlparry.com/work/registerme/huckleberry/' . $token);
         if (substr($result, 0, 2) == "Ok") {
             //success
-            echo "<script>alert('#2Registration Successful!');</script>";
+            echo "<script>alert('Registration Successful!');</script>";
             $api = substr($result, 3);
             //store api key into database
             $new_key = $this->secrets->get(1);
@@ -61,7 +61,7 @@ class Manage extends Application {
             $this->secrets->update($new_key);
         } else {
             //failure
-            echo "<script>alert('#3Uh oh, something went wrong!');</script>";
+            echo "<script>alert('Uh oh, something went wrong!');</script>";
         }
     }
 
@@ -71,11 +71,11 @@ class Manage extends Application {
         $result = file_get_contents('https://umbrella.jlparry.com/work/rebootme?key=' . $token);
         if (substr($result, 0, 2) == "Ok") {
             //success
-            echo "<script>alert('#4Reboot Successful!');</script>";
+            echo "<script>alert('Reboot Successful!');</script>";
             $this->empty_tables();
         } else {
             //failure
-            echo "<script>alert('#5Uh oh, something went wrong!');</script>";
+            echo "<script>alert('Uh oh, something went wrong!');</script>";
         }
     }
 
@@ -110,9 +110,9 @@ class Manage extends Application {
     function sell_bots() {
         //check if empty for any part or too many slected for any part
         if (empty($_POST['robotSelected'])) {
-            echo "<script>alert('#6Please select a robot to sell');</script>";
+            echo "<script>alert('Please select a robot to sell');</script>";
         } else if (count($_POST['robotSelected']) > 1) {
-            echo "<script>alert('#7You may only sell one robot at a time!');</script>";
+            echo "<script>alert('You may only sell one robot at a time!');</script>";
         } else {
             $bot = $_POST['robotSelected'][0];
             $botPart = explode(" ", $bot);
@@ -137,10 +137,10 @@ class Manage extends Application {
                 $newHistory->productType = 'bot';
                 $newHistory->productIdentifier = uniqid();
                 $this->histories->add($newHistory);
-                echo "<script>alert('#8Reboot Successful!');</script>";
+                echo "<script>alert('Robot successfully sold!');</script>";
             } else {
                 //failure
-                echo "<script>alert('#9Failed to sell bot to umbrella!'" . $botPart[0] . ");</script>";
+                echo "<script>alert('Failed to sell bot to umbrella!'" . $botPart[0] . ");</script>";
             }
         }
     }
