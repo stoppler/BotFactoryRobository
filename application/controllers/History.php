@@ -18,9 +18,7 @@ class History extends Application {
             $history[] = ['purchaseId' => $record->id,
                 'transactionType' => $record->transactionType,
                 'value' => $record->value,
-                'dateTime' => $record->dateTime,
-                'productType' => $record->productType,
-                'productIdentifier' => $record->productIdentifier];
+                'dateTime' => $record->dateTime];
         }
         $this->data['history'] = $history;
         $this->render();

@@ -6,13 +6,16 @@
  * and open the template in the editor.
  */
 
-class Parts extends MY_Model {
-
+/**
+ * Description of Secrets
+ *
+ * @author ry
+ */
+class Secrets extends MY_Model{
+    
+   
     public function __construct() {
-        parent::__construct('parts', 'id');
+        parent::__construct('secrets', 'id');
     }
     
 }
-
-
-    

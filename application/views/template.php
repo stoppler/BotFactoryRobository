@@ -10,18 +10,19 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
-
+    <body>
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="/index.php#home"><img src="/img/huckleberry.png" width="100"></a>
-
+					<div class="row">
+		                	<a class="navbar-brand" href="/index.php#home"><img src="/img/huckleberry.png" width="100"></a>
+							<h1 class="ptitle">{ptitle}</h1>
+					</div>
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	                	<span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                    <span class="icon-bar"></span>
+	                </button>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav navbar-right">
@@ -41,10 +42,7 @@
                 </div>
             </div>
         </nav>
-
-        <div class="container-fluid titlediv">
-            <h1 class="ptitle">({currentrole}) {ptitle}</h1>
-        </div>
+        <br><br><br><br><br><br><br><br><br><br>
         {content}
     </body>
 </html>

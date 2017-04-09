@@ -58,3 +58,4 @@ $route['parts/(:num)'] = 'Part/part_detail/$1';
 $route['test'] = 'Test';
 $route['assembly'] = 'Assembly';
 $route['history'] = 'History';
+$route['management'] = 'Manage';
